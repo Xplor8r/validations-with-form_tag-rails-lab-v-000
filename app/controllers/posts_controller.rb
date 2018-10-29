@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
-  
+
   def new
     @post = Post.new
   end
@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       render :new
     end
   end
-  
+
   def edit
     @post = Post.find(params[:id])
   end
